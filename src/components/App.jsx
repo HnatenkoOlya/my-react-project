@@ -54,7 +54,7 @@ export default App*/
     );
   }*/
 
-  import Product from './Product';
+  /*import Product from './Product';
 
   export default function App() {
     return (
@@ -72,4 +72,18 @@ export default App*/
         />
       </div>
     );
-  }  
+  } */ 
+
+  import Booklist from './Booklist';
+  import { favBooks } from './Booklist'
+
+  export default function App() {
+    return (
+      <div>
+      <h1>Books of the week</h1>
+        <Booklist books={favBooks} />
+      </div>
+    );
+  };
+
+  
